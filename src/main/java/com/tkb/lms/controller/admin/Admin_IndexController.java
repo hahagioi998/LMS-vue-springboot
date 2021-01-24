@@ -1,22 +1,16 @@
-package com.tkb.lms.controller;
+package com.tkb.lms.controller.admin;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-@RequestMapping("/lms")
-public class IndexController {
+@RequestMapping("/lms/admin")
+public class Admin_IndexController {
 	
-
-	@GetMapping(value={"/",""})
+	@GetMapping(value= {"/",""})
 	public String index() {
-		return "/index";
-	}
-	
-	@GetMapping("/header")
-	public String goheader() {
-		return "/loads/header";
+		return "/admin/index";
 	}
 
 }
